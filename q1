@@ -1,0 +1,13 @@
+let validation = 18;
+
+let nome = prompt("Digite seu nome?");
+let idade = parseInt(prompt("Qual sua idade?"));
+
+if(idade>validation){
+
+    console.log("Você é maior de idade, "+nome);
+
+} else{
+
+    console.log("Você é menor de idade, "+nome);
+}
