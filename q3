@@ -1,0 +1,42 @@
+
+var soma = function(a, b) {
+  return a + b;
+};
+
+var sub = function(a, b) {
+  return a - b;
+};
+
+var multiplicacao = function(a, b) {
+  return a * b;
+};
+
+var divisao = function(a, b) {
+  if (b === 0) {
+    return "Erro: Divisão por zero!";
+  }
+  return a/b;
+};
+
+
+let a = parseFloat(prompt("Informe um valor A:"));
+let b = parseFloat(prompt("Informe um valor B:"));
+
+console.log("Agora vamos escolher uma operação");
+console.log("1 - Soma");
+console.log("2 - Subtração");
+console.log("3 - Multiplicação");
+console.log("4 - Divisão");
+
+let esc = parseInt(prompt("Que operação deseja fazer? "));
+
+
+if (esc === 1) {
+  console.log("Resultado", soma(a, b));
+} else if (esc === 2) {
+  console.log("Resultado:", sub(a, b));
+} else if (esc === 3) {
+  console.log("Resultado:", multiplicacao(a, b));
+} else if (esc === 4) {
+  console.log("Resultado:", divisao(a, b));
+} 
