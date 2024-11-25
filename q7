@@ -1,0 +1,7 @@
+function inverterString(str) {
+  return str.split('').reverse().join('');
+}
+
+const texto = "Hamilton";
+console.log("Frase original:", texto);
+console.log("Frase invertida:", inverterString(texto));
